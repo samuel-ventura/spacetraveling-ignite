@@ -6,12 +6,18 @@
 
 .headerContent {
   display: flex;
-  max-width: 70rem;
+  min-width: 70rem;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: space-evenly;
+  
   img {
     width: 15rem;
+  }
+
+  @media (max-width: 1080px) {
+    align-items: center;
+    justify-content: center;
+    min-width: auto;
   }
 }
 

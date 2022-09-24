@@ -5,6 +5,8 @@ import { getPrismicClient } from '../services/prismic';
 import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
 
+
+
 interface Post {
   uid?: string;
   first_publication_date: string | null;
@@ -24,11 +26,41 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
- export default function Home(): JSX.Element {
+export default function Home({ postsPagination }: HomeProps): JSX.Element {
   return (
-    <h1>Home</h1>
+    <>
+      <div className={styles.mainContainer}>
+        <div className={styles.mainContent}>
+          <a href="/posts">
+            <h2>Como utilizar hooks</h2>
+            <p>Pensando em sincronização em vez de ciclos de vida.</p>
+          </a>
+          <div>
+            <img src="/images/calendar.svg" alt="Calendário" />
+            <span>15 mar 2021</span>
+            <img src="/images/user.svg" alt="Ícone de Pessoa" />
+            <span>Joseph Oliveira</span>
+          </div>
+        </div>
+        <div className={styles.mainContent}>
+          <a href="/post">
+            <h2>Como utilizar hooks</h2>
+            <p>Pensando em sincronização em vez de ciclos de vida.</p>
+          </a>
+          <div>
+            <img src="/images/calendar.svg" alt="Calendário" />
+            <span>15 mar 2021</span>
+            <img src="/images/user.svg" alt="Ícone de Pessoa" />
+            <span>Joseph Oliveira</span>
+          </div>
+        </div>
+        <div className={styles.mainContent}>
+          <button className={styles.button} type="button">Carregue mais posts</button>
+        </div>
+      </div>
+    </>
   )
- }
+}
 
 // export const getStaticProps = async () => {
 //   // const prismic = getPrismicClient({});
