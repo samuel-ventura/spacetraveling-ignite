@@ -31,7 +31,7 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
     <>
       <div className={styles.mainContainer}>
         <div className={styles.mainContent}>
-          <a href="/posts">
+          <a href="/post/">
             <h2>Como utilizar hooks</h2>
             <p>Pensando em sincronização em vez de ciclos de vida.</p>
           </a>
@@ -39,7 +39,9 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
             <img src="/images/calendar.svg" alt="Calendário" />
             <span>15 mar 2021</span>
             <img src="/images/user.svg" alt="Ícone de Pessoa" />
-            <span>Joseph Oliveira</span>
+            <a href="https://instagram.com/osamuelventura">
+              <span>Samuel Ventura</span>
+            </a>
           </div>
         </div>
         <div className={styles.mainContent}>
@@ -51,7 +53,9 @@ export default function Home({ postsPagination }: HomeProps): JSX.Element {
             <img src="/images/calendar.svg" alt="Calendário" />
             <span>15 mar 2021</span>
             <img src="/images/user.svg" alt="Ícone de Pessoa" />
-            <span>Joseph Oliveira</span>
+            <a href="https://instagram.com/osamuelventura">
+              <span>Samuel Ventura</span>
+            </a>
           </div>
         </div>
         <div className={styles.mainContent}>

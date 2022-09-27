@@ -37,6 +37,10 @@
     :not(:first-child){
       margin-left: 0.4rem;
     }
+
+    :nth-child(3) {
+      margin-left: 2rem;
+    }
   }
 
   @media (max-width: 1080px) {
