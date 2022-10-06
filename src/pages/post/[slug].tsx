@@ -28,7 +28,9 @@ interface PostProps {
 
 export default function Post({ post }: PostProps): JSX.Element {
   return (
-    <h1>{post}</h1>
+    <>
+      <div className={styles.hero}/>
+    </>
   )
 }
 
